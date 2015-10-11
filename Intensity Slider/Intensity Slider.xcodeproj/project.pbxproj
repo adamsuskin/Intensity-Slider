@@ -14,6 +14,7 @@
 		661DDA971BCB24630082814D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 661DDA951BCB24630082814D /* LaunchScreen.storyboard */; };
 		661DDAA21BCB24630082814D /* Intensity_SliderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661DDAA11BCB24630082814D /* Intensity_SliderTests.swift */; };
 		661DDAAD1BCB24630082814D /* Intensity_SliderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661DDAAC1BCB24630082814D /* Intensity_SliderUITests.swift */; };
+		661DDABB1BCB24D20082814D /* IntensitySliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661DDABA1BCB24D20082814D /* IntensitySliderView.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		661DDAA81BCB24630082814D /* Intensity SliderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Intensity SliderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		661DDAAC1BCB24630082814D /* Intensity_SliderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intensity_SliderUITests.swift; sourceTree = "<group>"; };
 		661DDAAE1BCB24630082814D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		661DDABA1BCB24D20082814D /* IntensitySliderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntensitySliderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				661DDA8C1BCB24630082814D /* AppDelegate.swift */,
 				661DDA8E1BCB24630082814D /* ViewController.swift */,
+				661DDABA1BCB24D20082814D /* IntensitySliderView.swift */,
 				661DDA901BCB24630082814D /* Main.storyboard */,
 				661DDA931BCB24630082814D /* Assets.xcassets */,
 				661DDA951BCB24630082814D /* LaunchScreen.storyboard */,
@@ -257,6 +260,7 @@
 			files = (
 				661DDA8F1BCB24630082814D /* ViewController.swift in Sources */,
 				661DDA8D1BCB24630082814D /* AppDelegate.swift in Sources */,
+				661DDABB1BCB24D20082814D /* IntensitySliderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
