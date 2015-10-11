@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		661DDA8D1BCB24630082814D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661DDA8C1BCB24630082814D /* AppDelegate.swift */; };
+		661DDA8F1BCB24630082814D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661DDA8E1BCB24630082814D /* ViewController.swift */; };
+		661DDA921BCB24630082814D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 661DDA901BCB24630082814D /* Main.storyboard */; };
+		661DDA941BCB24630082814D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 661DDA931BCB24630082814D /* Assets.xcassets */; };
+		661DDA971BCB24630082814D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 661DDA951BCB24630082814D /* LaunchScreen.storyboard */; };
+		661DDAA21BCB24630082814D /* Intensity_SliderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661DDAA11BCB24630082814D /* Intensity_SliderTests.swift */; };
+		661DDAAD1BCB24630082814D /* Intensity_SliderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 661DDAAC1BCB24630082814D /* Intensity_SliderUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		661DDA9E1BCB24630082814D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 661DDA811BCB24630082814D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 661DDA881BCB24630082814D;
+			remoteInfo = "Intensity Slider";
+		};
+		661DDAA91BCB24630082814D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 661DDA811BCB24630082814D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 661DDA881BCB24630082814D;
+			remoteInfo = "Intensity Slider";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		661DDA891BCB24630082814D /* Intensity Slider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Intensity Slider.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		661DDA8C1BCB24630082814D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		661DDA8E1BCB24630082814D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		661DDA911BCB24630082814D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		661DDA931BCB24630082814D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		661DDA961BCB24630082814D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		661DDA981BCB24630082814D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		661DDA9D1BCB24630082814D /* Intensity SliderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Intensity SliderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		661DDAA11BCB24630082814D /* Intensity_SliderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intensity_SliderTests.swift; sourceTree = "<group>"; };
+		661DDAA31BCB24630082814D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		661DDAA81BCB24630082814D /* Intensity SliderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Intensity SliderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		661DDAAC1BCB24630082814D /* Intensity_SliderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intensity_SliderUITests.swift; sourceTree = "<group>"; };
+		661DDAAE1BCB24630082814D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		661DDA861BCB24630082814D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		661DDA9A1BCB24630082814D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		661DDAA51BCB24630082814D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		661DDA801BCB24630082814D = {
+			isa = PBXGroup;
+			children = (
+				661DDA8B1BCB24630082814D /* Intensity Slider */,
+				661DDAA01BCB24630082814D /* Intensity SliderTests */,
+				661DDAAB1BCB24630082814D /* Intensity SliderUITests */,
+				661DDA8A1BCB24630082814D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		661DDA8A1BCB24630082814D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				661DDA891BCB24630082814D /* Intensity Slider.app */,
+				661DDA9D1BCB24630082814D /* Intensity SliderTests.xctest */,
+				661DDAA81BCB24630082814D /* Intensity SliderUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		661DDA8B1BCB24630082814D /* Intensity Slider */ = {
+			isa = PBXGroup;
+			children = (
+				661DDA8C1BCB24630082814D /* AppDelegate.swift */,
+				661DDA8E1BCB24630082814D /* ViewController.swift */,
+				661DDA901BCB24630082814D /* Main.storyboard */,
+				661DDA931BCB24630082814D /* Assets.xcassets */,
+				661DDA951BCB24630082814D /* LaunchScreen.storyboard */,
+				661DDA981BCB24630082814D /* Info.plist */,
+			);
+			path = "Intensity Slider";
+			sourceTree = "<group>";
+		};
+		661DDAA01BCB24630082814D /* Intensity SliderTests */ = {
+			isa = PBXGroup;
+			children = (
+				661DDAA11BCB24630082814D /* Intensity_SliderTests.swift */,
+				661DDAA31BCB24630082814D /* Info.plist */,
+			);
+			path = "Intensity SliderTests";
+			sourceTree = "<group>";
+		};
+		661DDAAB1BCB24630082814D /* Intensity SliderUITests */ = {
+			isa = PBXGroup;
+			children = (
+				661DDAAC1BCB24630082814D /* Intensity_SliderUITests.swift */,
+				661DDAAE1BCB24630082814D /* Info.plist */,
+			);
+			path = "Intensity SliderUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		661DDA881BCB24630082814D /* Intensity Slider */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 661DDAB11BCB24630082814D /* Build configuration list for PBXNativeTarget "Intensity Slider" */;
+			buildPhases = (
+				661DDA851BCB24630082814D /* Sources */,
+				661DDA861BCB24630082814D /* Frameworks */,
+				661DDA871BCB24630082814D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Intensity Slider";
+			productName = "Intensity Slider";
+			productReference = 661DDA891BCB24630082814D /* Intensity Slider.app */;
+			productType = "com.apple.product-type.application";
+		};
+		661DDA9C1BCB24630082814D /* Intensity SliderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 661DDAB41BCB24630082814D /* Build configuration list for PBXNativeTarget "Intensity SliderTests" */;
+			buildPhases = (
+				661DDA991BCB24630082814D /* Sources */,
+				661DDA9A1BCB24630082814D /* Frameworks */,
+				661DDA9B1BCB24630082814D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				661DDA9F1BCB24630082814D /* PBXTargetDependency */,
+			);
+			name = "Intensity SliderTests";
+			productName = "Intensity SliderTests";
+			productReference = 661DDA9D1BCB24630082814D /* Intensity SliderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		661DDAA71BCB24630082814D /* Intensity SliderUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 661DDAB71BCB24630082814D /* Build configuration list for PBXNativeTarget "Intensity SliderUITests" */;
+			buildPhases = (
+				661DDAA41BCB24630082814D /* Sources */,
+				661DDAA51BCB24630082814D /* Frameworks */,
+				661DDAA61BCB24630082814D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				661DDAAA1BCB24630082814D /* PBXTargetDependency */,
+			);
+			name = "Intensity SliderUITests";
+			productName = "Intensity SliderUITests";
+			productReference = 661DDAA81BCB24630082814D /* Intensity SliderUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		661DDA811BCB24630082814D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Adam Suskin";
+				TargetAttributes = {
+					661DDA881BCB24630082814D = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					661DDA9C1BCB24630082814D = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 661DDA881BCB24630082814D;
+					};
+					661DDAA71BCB24630082814D = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 661DDA881BCB24630082814D;
+					};
+				};
+			};
+			buildConfigurationList = 661DDA841BCB24630082814D /* Build configuration list for PBXProject "Intensity Slider" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 661DDA801BCB24630082814D;
+			productRefGroup = 661DDA8A1BCB24630082814D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				661DDA881BCB24630082814D /* Intensity Slider */,
+				661DDA9C1BCB24630082814D /* Intensity SliderTests */,
+				661DDAA71BCB24630082814D /* Intensity SliderUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		661DDA871BCB24630082814D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				661DDA971BCB24630082814D /* LaunchScreen.storyboard in Resources */,
+				661DDA941BCB24630082814D /* Assets.xcassets in Resources */,
+				661DDA921BCB24630082814D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		661DDA9B1BCB24630082814D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		661DDAA61BCB24630082814D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		661DDA851BCB24630082814D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				661DDA8F1BCB24630082814D /* ViewController.swift in Sources */,
+				661DDA8D1BCB24630082814D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		661DDA991BCB24630082814D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				661DDAA21BCB24630082814D /* Intensity_SliderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		661DDAA41BCB24630082814D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				661DDAAD1BCB24630082814D /* Intensity_SliderUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		661DDA9F1BCB24630082814D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 661DDA881BCB24630082814D /* Intensity Slider */;
+			targetProxy = 661DDA9E1BCB24630082814D /* PBXContainerItemProxy */;
+		};
+		661DDAAA1BCB24630082814D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 661DDA881BCB24630082814D /* Intensity Slider */;
+			targetProxy = 661DDAA91BCB24630082814D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		661DDA901BCB24630082814D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				661DDA911BCB24630082814D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		661DDA951BCB24630082814D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				661DDA961BCB24630082814D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		661DDAAF1BCB24630082814D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		661DDAB01BCB24630082814D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		661DDAB21BCB24630082814D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Intensity Slider/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adamsuskin.Intensity-Slider";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		661DDAB31BCB24630082814D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Intensity Slider/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adamsuskin.Intensity-Slider";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		661DDAB51BCB24630082814D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Intensity SliderTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adamsuskin.Intensity-SliderTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Intensity Slider.app/Intensity Slider";
+			};
+			name = Debug;
+		};
+		661DDAB61BCB24630082814D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Intensity SliderTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adamsuskin.Intensity-SliderTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Intensity Slider.app/Intensity Slider";
+			};
+			name = Release;
+		};
+		661DDAB81BCB24630082814D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Intensity SliderUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adamsuskin.Intensity-SliderUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Intensity Slider";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		661DDAB91BCB24630082814D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Intensity SliderUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.adamsuskin.Intensity-SliderUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Intensity Slider";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		661DDA841BCB24630082814D /* Build configuration list for PBXProject "Intensity Slider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				661DDAAF1BCB24630082814D /* Debug */,
+				661DDAB01BCB24630082814D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		661DDAB11BCB24630082814D /* Build configuration list for PBXNativeTarget "Intensity Slider" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				661DDAB21BCB24630082814D /* Debug */,
+				661DDAB31BCB24630082814D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		661DDAB41BCB24630082814D /* Build configuration list for PBXNativeTarget "Intensity SliderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				661DDAB51BCB24630082814D /* Debug */,
+				661DDAB61BCB24630082814D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		661DDAB71BCB24630082814D /* Build configuration list for PBXNativeTarget "Intensity SliderUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				661DDAB81BCB24630082814D /* Debug */,
+				661DDAB91BCB24630082814D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 661DDA811BCB24630082814D /* Project object */;
+}
