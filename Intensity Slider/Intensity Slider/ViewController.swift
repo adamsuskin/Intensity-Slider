@@ -10,6 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var IntensityView: IntensitySliderView?
+    @IBOutlet weak var Slider: UISlider?
+
+    @IBAction func sliderChangedVals() {
+        IntensityView!.counter = Slider!.value
+        IntensityView!.setNeedsDisplay()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

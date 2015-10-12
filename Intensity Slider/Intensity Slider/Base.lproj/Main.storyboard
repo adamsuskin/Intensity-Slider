@@ -3,6 +3,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -26,14 +27,31 @@
                                     <constraint firstAttribute="width" secondItem="9V0-xs-O4u" secondAttribute="height" multiplier="1:1" id="utq-8p-Awq"/>
                                 </constraints>
                             </view>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="uzr-Vs-yvg">
+                                <rect key="frame" x="74" y="550" width="452" height="31"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ueR-Zk-bH0"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="sliderChangedVals" destination="BYZ-38-t0r" eventType="valueChanged" id="pAO-Hq-oae"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="uzr-Vs-yvg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="56" id="BUF-gR-5Iy"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uzr-Vs-yvg" secondAttribute="bottom" constant="20" id="ESC-sr-zpX"/>
                             <constraint firstItem="9V0-xs-O4u" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Pez-l6-F4V"/>
                             <constraint firstItem="9V0-xs-O4u" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="hC1-eR-ILj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uzr-Vs-yvg" secondAttribute="trailing" constant="56" id="heZ-VL-DMo"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="IntensityView" destination="9V0-xs-O4u" id="DtU-SF-9wa"/>
+                        <outlet property="Slider" destination="uzr-Vs-yvg" id="X82-gY-RUd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
