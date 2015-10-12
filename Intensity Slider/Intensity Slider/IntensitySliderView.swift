@@ -33,11 +33,21 @@ extension UIColor {
 
 public class IntensitySliderView: UIView {
 
-    @IBInspectable var counter: Float = 0
     @IBInspectable var upperBound: Float = 100
     @IBInspectable var lowerBound: Float = 0
     @IBInspectable var upperBoundSet: Bool = true
     @IBInspectable var lowerBoundSet: Bool = true
+    @IBInspectable var counter: Float = 0 {
+        didSet {
+            if(counter > upperBound && upperBoundSet) {
+                counter = upperBound
+            }
+            
+            if(counter < lowerBound && lowerBoundSet) {
+                counter = lowerBound
+            }
+        }
+    }
     @IBInspectable var outlineColor: UIColor = UIColor.blackColor()
     @IBInspectable var minColor: UIColor = UIColor.greenColor()
     @IBInspectable var maxColor: UIColor = UIColor.redColor()
