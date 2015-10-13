@@ -31,6 +31,25 @@ extension UIColor {
     }
 }
 
+extension CGPoint {
+    static func subtract(p1: CGPoint, p2: CGPoint) -> CGPoint {
+        return CGPoint.init(x: p1.x - p2.x, y: p1.y - p2.y)
+    }
+    
+    static func add(p1: CGPoint, p2: CGPoint) -> CGPoint {
+        return CGPoint.init(x: p1.x + p2.x, y: p1.y + p2.y)
+    }
+    
+    static func dot(p1: CGPoint, p2: CGPoint) -> CGFloat {
+        return (p1.x * p2.x) + (p1.y * p2.y)
+    }
+    
+    static func norm(p1: CGPoint) -> CGFloat {
+        return sqrt((p1.x * p1.x) + (p1.y * p1.y))
+    }
+
+}
+
 public class IntensitySliderView: UIView {
 
     @IBInspectable var upperBound: Float = 100
@@ -81,6 +100,50 @@ public class IntensitySliderView: UIView {
         
     }
     
+    func panSelector(sender: UIPanGestureRecognizer) {
+        let newLoc: CGPoint = sender.locationInView(self)
+        let trans: CGPoint = sender.translationInView(self)
+        let oldLoc: CGPoint = CGPoint.subtract(newLoc, p2: trans)
+        
+        let center = CGPoint(x:frame.width/2, y: frame.width/2)
+        
+        var firstVec = CGPoint.subtract(oldLoc, p2: center)
+        firstVec = CGPoint.init(x: firstVec.x, y: -firstVec.y)
+        var secondVec = CGPoint.subtract(newLoc, p2: center)
+        secondVec = CGPoint.init(x: secondVec.x, y: -secondVec.y)
+    
+        let cc: Bool = (firstVec.y < 0 && secondVec.x < firstVec.x) || (firstVec.y > 0 && secondVec.x > firstVec.x)
+        let rot: Float = Float(CGPoint.norm(trans))
+        let multiplier: Float = 0.001
+        if cc {
+            counter += multiplier * rot
+        }
+        else {
+            counter -= multiplier * rot
+        }
+
+        setNeedsDisplay()
+    }
+    
+    private func initialize() {
+        let recognizer = UIPanGestureRecognizer(target: self, action: Selector("panSelector:"))
+        addGestureRecognizer(recognizer)
+    }
+    
+    override public init(frame: CGRect) {
+        super.init(frame: frame)
+        initialize()
+    }
+    
+    convenience init() {
+        self.init(frame: CGRect.zero)
+    }
+    
+    required public init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        initialize()
+    }
+    
     override public func drawRect(rect: CGRect) {
         
         let center = CGPoint(x:bounds.width/2, y: bounds.width/2)
@@ -114,7 +177,7 @@ public class IntensitySliderView: UIView {
         
         let shadow: UIColor = UIColor.blackColor().colorWithAlphaComponent(0.8)
         let shadowOffset = CGSizeMake(0, 0)
-        let shadowBlurRadius: CGFloat = 5
+        let shadowBlurRadius: CGFloat = 3
         let context = UIGraphicsGetCurrentContext()
         
         CGContextSetShadowWithColor(context, shadowOffset, shadowBlurRadius, shadow.CGColor)
