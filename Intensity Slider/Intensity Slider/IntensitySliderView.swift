@@ -112,16 +112,11 @@ public class IntensitySliderView: UIView {
         var secondVec = CGPoint.subtract(newLoc, p2: center)
         secondVec = CGPoint.init(x: secondVec.x, y: -secondVec.y)
     
-        let cc: Bool = (firstVec.y < 0 && secondVec.x < firstVec.x) || (firstVec.y > 0 && secondVec.x > firstVec.x)
-        let rot: Float = Float(CGPoint.norm(trans))
-        let multiplier: Float = 0.001
-        if cc {
-            counter += multiplier * rot
-        }
-        else {
-            counter -= multiplier * rot
-        }
-
+        let rot: Float = -1*Float(atan2(secondVec.y, secondVec.x) - atan2(firstVec.y, firstVec.x))
+        let multiplier: Float = 1
+        
+        counter += multiplier * rot
+        
         setNeedsDisplay()
     }
     
